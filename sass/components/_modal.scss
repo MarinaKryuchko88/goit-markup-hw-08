@@ -1,0 +1,222 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 530px;
+  height: 580px;
+  padding: 40px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  /* свойства анимации */
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  padding: 0;
+
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+
+  & .close-icon {
+    width: 12px;
+    height: 12px;
+    fill: #000;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .close-icon,
+  &:focus .close-icon {
+    fill: $accent-color;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.field-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  & .field-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: $title-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal {
+  & .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  & .form-field:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & .label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $text-color;
+    margin-bottom: 4px;
+  }
+  & .input {
+    padding: 0;
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline-color: $accent-color;
+  }
+  & .input:focus + .field-icon {
+    fill: $accent-color;
+  }
+  & .comments {
+    resize: none;
+    padding: 12px 16px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline-color: $accent-color;
+  }
+  & .comments::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.custom-checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.agreement {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  align-items: center;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .square {
+    background-image: url(../images/icons/icon-checkbox.svg);
+    background-color: $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+  }
+}
+
+.square {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000;
+  border-radius: 1px;
+  margin-right: 8px;
+}
+
+.agreement-link {
+  margin-left: 5px;
+  text-decoration: underline;
+  color: $accent-color;
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: $accent-color;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  color: $main-color;
+}

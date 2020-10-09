@@ -1,0 +1,113 @@
+.header {
+  border-bottom: 1px solid #eeeeee;
+  // & .container {
+  //   height: 80px;
+  // }
+
+  // & .container,
+  & .nav-list,
+  & .links-header {
+    align-items: center;
+  }
+  & .nav-list {
+    display: flex;
+  }
+  & .logo {
+    margin-right: 93px;
+  }
+}
+
+.header__container {
+  display: flex;
+  height: 60px;
+  align-items: center;
+
+  @include screen-size(tablet) {
+    height: 80px;
+  }
+}
+
+.title-text {
+  color: $title-color;
+
+  /* свойства анимации */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-nav {
+  & .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .link:hover,
+  & .link:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.links-header {
+  & .mail {
+    margin-right: 50px;
+  }
+  & .icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  & .icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  & .link {
+    display: inline-flex;
+    align-items: center;
+    fill: currentColor;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color;
+
+    /* свойства анимации */
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .link:hover,
+  & .link:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.nav-menu {
+  margin-right: auto;
+  & .current-link {
+    color: $accent-color;
+  }
+  /* подчеркивание текущей ссылки */
+  & .current-link::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: relative;
+    bottom: -30px;
+  }
+}
