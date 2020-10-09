@@ -1049,6 +1049,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .our-clients .title {
   font-weight: 700;
   font-size: 28px;
@@ -1081,7 +1088,15 @@ a {
   margin: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .list-clients {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .blok-client {
+  margin-bottom: 30px;
   width: calc((100% - 30px) / 2);
 }
 
@@ -1089,12 +1104,30 @@ a {
   margin-right: 30px;
 }
 
+.blok-client:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .blok-client {
     width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
   }
   .blok-client:nth-child(3n) {
     margin-right: 0;
+  }
+  .blok-client:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blok-client {
+    margin-bottom: 0;
+    width: 170px;
+  }
+  .blok-client:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1128,18 +1161,6 @@ a {
 
 .link-client:hover, .link-client:focus {
   border: 1px solid #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .link-client {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .link-client {
-    width: 170px;
-  }
 }
 
 .backdrop {
