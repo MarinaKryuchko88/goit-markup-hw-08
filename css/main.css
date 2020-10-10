@@ -1257,8 +1257,8 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   margin: 0;
   display: -webkit-box;
@@ -1282,6 +1282,13 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    height: 580px;
+  }
 }
 
 .close-button {
@@ -1314,16 +1321,22 @@ a {
   fill: #2196f3;
 }
 
-.title {
+.modal__title {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin: 0;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .field-wrap {
@@ -1437,7 +1450,6 @@ a {
 
 .custom-checkbox {
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .agreement {
@@ -1446,13 +1458,20 @@ a {
   display: flex;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox {
@@ -1480,7 +1499,10 @@ a {
   height: 15px;
   border: 2px solid #000;
   border-radius: 1px;
-  margin-right: 8px;
+}
+
+.agreement-text {
+  margin-left: 8px;
 }
 
 .agreement-link {
@@ -1498,6 +1520,10 @@ a {
   padding: 0;
   border: none;
   color: #ffffff;
+}
+
+.submit {
+  margin-top: 30px;
 }
 
 .filters {
