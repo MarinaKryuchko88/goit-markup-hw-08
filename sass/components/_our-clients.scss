@@ -19,7 +19,6 @@
 
   & .icon-client {
     fill: $icon-color;
-
     /* свойства анимации */
     transition-property: fill;
     transition-duration: 250ms;
@@ -47,19 +46,11 @@
   &:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
-
-  // @media screen and (max-width: 767px) {
-  //   margin-bottom: 30px;
-  //   &:nth-last-child(-n + 2) {
-  //     margin-bottom: 0;
-  //   }
-  // }
 }
 
 @include screen-size(tablet) {
   .blok-client {
     width: calc((100% - 30px * 2) / 3);
-    // margin-right: 30px;
     &:nth-child(2n + 1) {
       margin-right: 0;
     }
@@ -84,19 +75,15 @@
 .link-client {
   display: flex;
   margin: 0;
-
-  // width: 210px;
   height: 90px;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   /* свойства анимации */
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover .icon-client,
   &:focus .icon-client {
     fill: $accent-color;
@@ -105,11 +92,4 @@
   &:focus {
     border: 1px solid $accent-color;
   }
-
-  // @include screen-size(tablet) {
-  //   width: 226px;
-  // }
-  // @include screen-size(desktop) {
-  //   width: 170px;
-  // }
 }

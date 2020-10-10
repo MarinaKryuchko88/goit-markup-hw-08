@@ -60,6 +60,10 @@
   border-radius: 4px;
   padding: 10px 32px;
   cursor: pointer;
+
+  @include screen-size(tablet) {
+    margin-top: 30px;
+  }
 }
 
 // .section-hero .container {

@@ -570,6 +570,18 @@ a {
   margin-right: 93px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .logo {
+    margin-right: 93px;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,6 +632,10 @@ a {
   margin-right: 50px;
 }
 
+.links-header {
+  display: none;
+}
+
 .links-header .mail {
   margin-right: 50px;
 }
@@ -664,7 +680,36 @@ a {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .links-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 84px;
+  }
+  .links-header .mail {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .links-header .link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .links-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
 .nav-menu {
+  display: none;
   margin-right: auto;
   /* подчеркивание текущей ссылки */
 }
@@ -681,6 +726,14 @@ a {
   border-radius: 2px;
   position: relative;
   bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .section-hero__container {
@@ -755,6 +808,12 @@ a {
   border-radius: 4px;
   padding: 10px 32px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .button-hero {
+    margin-top: 30px;
+  }
 }
 
 /* кнопка на стр. Студио */

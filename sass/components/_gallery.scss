@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
   & .paragraf,
   & .title-text {
     margin: 0px;
@@ -41,9 +40,6 @@
 
 .gallery {
   margin-top: 34px;
-  // & .item:hover .overlay {
-  //   transform: translateY(0);
-  // }
 }
 
 .gallery__parent {
@@ -58,11 +54,9 @@
 .gallery__item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
-
   &:hover .overlay {
     transform: translateY(0);
   }
-
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -102,13 +96,10 @@
   position: absolute;
   top: 0;
   left: 0;
-
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-
   transform: translateY(100%);
-
   /* свойства анимации */
   transition-property: transform;
   transition-duration: 250ms;
@@ -123,6 +114,5 @@
   letter-spacing: 0.03em;
   margin: 0;
   height: 100%;
-
   color: $main-color;
 }
