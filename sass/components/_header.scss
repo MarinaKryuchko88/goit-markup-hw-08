@@ -1,20 +1,28 @@
 .header {
+  position: relative;
+  top: 0;
+  width: 100%;
   border-bottom: 1px solid #eeeeee;
   & .nav-list,
   & .links-header {
     align-items: center;
   }
-  & .nav-list {
-    display: flex;
+}
+
+.header .nav-list {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
   }
-  & .logo {
+}
+.header__logo {
+  margin-right: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+  @include screen-size(desktop) {
     margin-right: 93px;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-right: 88px;
-    }
-    @include screen-size(desktop) {
-      margin-right: 93px;
-    }
   }
 }
 
@@ -56,65 +64,98 @@
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .links-header {
-  display: none;
-  & .mail {
-    margin-right: 50px;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin: 0;
   }
-  & .icon-envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-left: 84px;
   }
-  & .icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+  @include screen-size(desktop) {
+    margin-left: auto;
   }
-  & .link {
-    display: inline-flex;
-    align-items: center;
-    fill: currentColor;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $text-color;
-    /* свойства анимации */
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.links-header .mail {
+  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 16px;
   }
-  & .link:hover,
-  & .link:focus {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.links-header .link {
+  display: inline-flex;
+  align-items: center;
+  fill: currentColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  /* свойства анимации */
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     fill: $accent-color;
     color: $accent-color;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 84px;
-    & .mail {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-    & .link {
-      font-size: 12px;
-      line-height: 1.17;
-    }
+    font-size: 12px;
+    line-height: 1.17;
   }
-  @include screen-size(desktop) {
-    display: flex;
-    margin-left: auto;
+}
+
+.links-header .icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  @include screen-size(tablet) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+.links-header .icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  @include screen-size(tablet) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
   }
 }
 
 .nav-menu {
-  display: none;
-  margin-right: auto;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  @include screen-size(tablet) {
+    display: flex;
+  }
+
   & .current-link {
     color: $accent-color;
   }
@@ -127,14 +168,8 @@
     border-radius: 2px;
     position: relative;
     bottom: -30px;
-  }
-
-  @include screen-size(tablet) {
-    display: flex;
-    // margin-right: 84px;
-  }
-  @include screen-size(desktop) {
-    // display: contents;
-    // margin-right: ;
+    @media screen and (max-width: 767px) {
+      bottom: -8px;
+    }
   }
 }
