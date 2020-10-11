@@ -45,7 +45,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 96%;
+    height: auto;
   }
   @include screen-size(desktop) {
     width: 530px;
