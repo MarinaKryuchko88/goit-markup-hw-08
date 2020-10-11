@@ -155,7 +155,12 @@
           <ul class="list flexbox our-work__list">
             <li class="item our-work__item">
               <div class="our-work__blok">
-                <img src="./images/img1.jpg" alt="Пишем код" />
+                <img
+                  srcset="./images/works/img1-370@2x.jpg"
+                  src="./images/works/img1-370.jpg"
+                  alt="Пишем код"
+                  width="370"
+                />
                 <div class="description">
                   <p class="description-text">Десктопные приложения</p>
                 </div>
@@ -164,8 +169,10 @@
             <li class="item our-work__item">
               <div class="our-work__blok">
                 <img
-                  src="./images/img2.jpg"
+                  srcset="./images/works/img2-370@2x.jpg"
+                  src="./images/works/img2-370.jpg"
                   alt="Разрабатываем приложения для телефона"
+                  width="370"
                 />
                 <div class="description">
                   <p class="description-text">Мобильные приложения</p>
@@ -174,7 +181,12 @@
             </li>
             <li class="item our-work__item">
               <div class="our-work__blok">
-                <img src="./images/img3.jpg" alt="Создаем дизайн" />
+                <img
+                  srcset="./images/works/img3-370@2x.jpg"
+                  src="./images/works/img3-370.jpg"
+                  alt="Создаем дизайн"
+                  width="370"
+                />
                 <div class="description">
                   <p class="description-text">Дизайнерские решения</p>
                 </div>
@@ -190,11 +202,27 @@
           <h2 class="title our-team__title">Наша команда</h2>
           <ul class="list flexbox our-team__list">
             <li class="item our-team__item">
-              <img
-                src="./images/игорь_демьяненко.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/igor-450.jpg    1x,
+                    ./images/team/igor-450@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/igor-354.jpg    1x,
+                    ./images/team/igor-354@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="./images/team/igor-270@2x.jpg 2x"
+                  src="./images/team/igor-270.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="title-text">Игорь Демьяненко</h3>
               <p class="paragraf">Product Designer</p>
               <ul class="flexbox list-icon">
@@ -229,11 +257,27 @@
               </ul>
             </li>
             <li class="item our-team__item">
-              <img
-                src="./images/ольга_репина.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/olga-450.jpg    1x,
+                    ./images/team/olga-450@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/olga-354.jpg    1x,
+                    ./images/team/olga-354@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="./images/team/olga-270@2x.jpg"
+                  src="./images/team/olga-270.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <h3 class="title-text">Ольга Репина</h3>
               <p class="paragraf">Frontend Developer</p>
               <ul class="flexbox list-icon">
@@ -268,11 +312,27 @@
               </ul>
             </li>
             <li class="item our-team__item">
-              <img
-                src="./images/николай_тарасов.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/nikolay-450.jpg    1x,
+                    ./images/team/nikolay-450@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/nikolay-354.jpg    1x,
+                    ./images/team/nikolay-354@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="./images/team/nikolay-270@2x.jpg"
+                  src="./images/team/nikolay-270.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="title-text">Николай Тарасов</h3>
               <p class="paragraf">Marketing</p>
               <ul class="flexbox list-icon">
@@ -307,11 +367,27 @@
               </ul>
             </li>
             <li class="item our-team__item">
-              <img
-                src="./images/михаил_ермаков.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mikhail-450.jpg    1x,
+                    ./images/team/mikhail-450@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/team/mikhail-354.jpg    1x,
+                    ./images/team/mikhail-354@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="./images/team/mikhail-270@2x.jpg"
+                  src="./images/team/mikhail-270.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="title-text">Михаил Ермаков</h3>
               <p class="paragraf">UI Designer</p>
               <ul class="flexbox list-icon">

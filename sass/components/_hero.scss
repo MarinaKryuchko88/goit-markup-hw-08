@@ -13,19 +13,37 @@
 .section-hero {
   background-color: $secondary-color;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
-    ),
-    url(../images/photo-hero-optimiz.jpg);
+  // background-image: linear-gradient(
+  //     rgba(47, 48, 58, 0.6),
+  //     rgba(47, 48, 58, 0.6)
+  //   ),
+  //   url(../images/photo-hero-optimiz.jpg);
+  background-image: url(../images/hero/hero-480.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
   height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .box {
+      background-image: url("../images/hero/hero-480@2x.jpg");
+    }
+  }
 
+  @include screen-size(tablet) {
+    background-image: url(../images/hero/hero-768.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   @include screen-size(desktop) {
     height: 600px;
+    background-image: url(../images/hero/hero-1600.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
 
