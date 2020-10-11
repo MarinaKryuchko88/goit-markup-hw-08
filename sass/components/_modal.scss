@@ -214,6 +214,9 @@
 
 .agreement-text {
   margin-left: 8px;
+  @include screen-size(tablet) {
+    margin-top: 0;
+  }
 }
 
 .agreement-link {
