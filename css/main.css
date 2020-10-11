@@ -1103,6 +1103,13 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 16px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team .list-icon {
+    padding-bottom: 30px;
+  }
 }
 
 .our-team .icon {
@@ -1153,8 +1160,8 @@ a {
   .our-team__item:nth-child(2n) {
     margin-right: 0;
   }
-  .our-team__item:nth-last-child(2n) {
-    margin-bottom: 0;
+  .our-team__item:not(:nth-last-child(2n)) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1937,6 +1944,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
   margin-bottom: 20px;
 }
 
