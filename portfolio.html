@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -114,7 +106,27 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img src="./images/Технокряк.jpg" alt="Технокряк" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/technokryak-450.jpg    1x,
+                          ./images/gallery/technokryak-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/technokryak-354.jpg    1x,
+                          ./images/gallery/technokryak-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/technokryak-370@2x.jpg 2x"
+                        src="./images/gallery/technokryak-370.jpg"
+                        alt="Технокряк"
+                      />
+                    </picture>
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -133,10 +145,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img
-                      src="./images/постер_баскетболисты.jpg"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/basketball-450.jpg    1x,
+                          ./images/gallery/basketball-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/basketball-354.jpg    1x,
+                          ./images/gallery/basketball-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/basketball-370@2x.jpg 2x"
+                        src="./images/gallery/basketball-370.jpg"
+                        alt="Постер New Orlean vs Golden Star"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -157,10 +187,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img
-                      src="./images/ресторан-рыба.jpg"
-                      alt="Ресторан Seafood"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/seafood-450.jpg    1x,
+                          ./images/gallery/seafood-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/seafood-354.jpg    1x,
+                          ./images/gallery/seafood-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/seafood-370@2x.jpg 2x"
+                        src="./images/gallery/seafood-370.jpg"
+                        alt="Ресторан Seafood"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -181,7 +229,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img src="./images/наушники.jpg" alt="Проект Prime" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/headphones-450.jpg    1x,
+                          ./images/gallery/headphones-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/headphones-354.jpg    1x,
+                          ./images/gallery/headphones-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/headphones-370@2x.jpg 2x"
+                        src="./images/gallery/headphones-370.jpg"
+                        alt="Проект Prime"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -200,7 +269,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img src="./images/коробочки.jpg" alt="Проект Boxes" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/boxes-450.jpg    1x,
+                          ./images/gallery/boxes-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/boxes-354.jpg    1x,
+                          ./images/gallery/boxes-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/boxes-370@2x.jpg 2x"
+                        src="./images/gallery/boxes-370.jpg"
+                        alt="Проект Boxes"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -219,10 +309,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img
-                      src="./images/монитор.jpg"
-                      alt="Inspiration has no Borders"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/monitor-450.jpg    1x,
+                          ./images/gallery/monitor-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/monitor-354.jpg    1x,
+                          ./images/gallery/monitor-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/monitor-370@2x.jpg 2x"
+                        src="./images/gallery/monitor-370.jpg"
+                        alt="Inspiration has no Borders"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -243,10 +351,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img
-                      src="./images/брошюра.jpg"
-                      alt="Издание Limited Edition"
-                    />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/brochure-450.jpg    1x,
+                          ./images/gallery/brochure-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/brochure-354.jpg    1x,
+                          ./images/gallery/brochure-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/brochure-370@2x.jpg 2x"
+                        src="./images/gallery/brochure-370.jpg"
+                        alt="Издание Limited Edition"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -267,7 +393,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img src="./images/бирка.jpg" alt="Проект LAB" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/label-450.jpg    1x,
+                          ./images/gallery/label-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/label-354.jpg    1x,
+                          ./images/gallery/label-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/label-370@2x.jpg 2x"
+                        src="./images/gallery/label-370.jpg"
+                        alt="Проект LAB"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
@@ -286,7 +433,28 @@
               <li class="item gallery__item">
                 <a href="">
                   <div class="gallery__parent">
-                    <img src="./images/ноутбук.jpg" alt="Growing Business" />
+                    <picture>
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          ./images/gallery/notebook-450.jpg    1x,
+                          ./images/gallery/notebook-450@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          ./images/gallery/notebook-354.jpg    1x,
+                          ./images/gallery/notebook-354@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        srcset="./images/gallery/notebook-370@2x.jpg 2x"
+                        src="./images/gallery/notebook-370.jpg"
+                        alt="Growing Business"
+                      />
+                    </picture>
+
                     <div class="overlay">
                       <p class="animation-text">
                         Технокряк это современная площадка распространения
