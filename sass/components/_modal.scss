@@ -48,6 +48,8 @@
     width: 96%;
     height: auto;
   }
+  @include screen-size(tablet) {
+  }
   @include screen-size(desktop) {
     width: 530px;
     height: 580px;
@@ -220,7 +222,6 @@
 }
 
 .agreement-link {
-  margin-left: 5px;
   text-decoration: underline;
   color: $accent-color;
 }
